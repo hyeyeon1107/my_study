@@ -1,0 +1,18 @@
+# 비밀 정보
+.env
+*.pem
+*.key
+
+# 파이썬
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# 노드
+node_modules/
+
+# 기타
+*.db
+.DS_Store
+Thumbs.db
