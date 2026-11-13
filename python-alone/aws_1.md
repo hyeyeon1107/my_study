@@ -9,13 +9,13 @@ vpc
 	인터넷 게이트웨이 생성 후 vpc 연결
 	라우팅 테이블 편집 -> 모든 대상에 대해 인터넷 게이트웨이를 통하는 라우팅 추가
 
-scp -i ec2-1513.pem .\ec2-1513.pem ubuntu@52.79.167.234:~/.ssh
+scp -i ec2-xxxx.pem .\ec2-xxxx.pem ubuntu@xx.xx.xxx.xxx:~/.ssh
 	bastion으로 키페어 보내기
 bastion으로 접속 후 
-	ssh -i .ssh/ec2-1513.pem ubuntu@172.16.105.219
+	ssh -i .ssh/ec2-xxxx.pem ubuntu@172.16.105.219
 	웹으로 접속
 다시 ls -al .ssh 확인해서 내 키가 갖고 있는 권한의 범위 확인
-chmod 400 .ssh/ec2-1513.pem
+chmod 400 .ssh/ec2-xxxx.pem
 	권한 축소한 후 다시 ls -al .ssh 확인 후 다시 웹 접속
 ping 8.8.8.8
 	private 라우트에서는 아직 인터넷 연결이 안 됨!
